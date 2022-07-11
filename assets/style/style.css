@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  overflow: hidden;
   margin: 0;
 }
 
@@ -30,8 +29,28 @@ nav {
 }
 
 main {
-    margin-bottom: 20%;
-    background-color: red;
-    width: 100vw;
-    height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 30vh;
+  margin-top: 10%;
+}
+
+.addBook {
+  width: 70%;
+  border: 1px solid black;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+  height: auto;
+}
+
+form > p {
+  max-height: 30%;
 }
