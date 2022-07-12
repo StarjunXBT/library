@@ -30,6 +30,7 @@ nav {
 
 main {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100vw;
@@ -46,11 +47,27 @@ main {
 
 form {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 15px;
   height: auto;
 }
 
 form > p {
   max-height: 30%;
+}
+
+.books {
+  display: grid;
+  row-gap: 10px;
+  border-top: 1px solid black;
+  width: 90vw;
+  height: auto;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: space-around;
+  max-width: 100%;
+  max-height: 100%;
 }
