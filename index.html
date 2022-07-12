@@ -7,11 +7,11 @@
     <title>Library - The Odin Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/style/style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=David+Libre&family=Oxygen:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body>
     <nav>
@@ -20,18 +20,18 @@
       <small class="trademark">SBL ™</small>
     </nav>
     <main>
-      <form action="assets/script/script.js" method="post">
+      <form action="">
         <p>
           <label>Title</label><br />
-          <input type="text" name="title" />
+          <input type="text" name="title" minlength="2" />
         </p>
         <p>
           <label>Author</label><br />
-          <input type="text" name="author" />
+          <input type="text" name="author" minlength="2" />
         </p>
         <p>
           <label>Pages</label><br />
-          <input type="text" name="pages" />
+          <input type="text" name="pages" minlength="2"/>
         </p>
         <p>
           <label>Status</label><br />
@@ -42,6 +42,9 @@
         </p>
         <button type="submit">Add a book</button>
       </form>
+      <div class="books">
+      </div>
     </main>
+    <script src="assets/script/script.js"></script>
   </body>
 </html>
